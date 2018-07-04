@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  breed: MyString
+  age: 1
+  genre: MyString
+  vaccine: MyString
+  pedigree: MyString
+  mothername: MyString
+  namefather: MyString
+  rg: MyString
+  temperament: MyString
+  length: 1.5
+  alturacernelha: 1.5
+  tipopelo: MyString
+  corpelo: MyString
+  weigth: 1.5
+
+two:
+  name: MyString
+  breed: MyString
+  age: 1
+  genre: MyString
+  vaccine: MyString
+  pedigree: MyString
+  mothername: MyString
+  namefather: MyString
+  rg: MyString
+  temperament: MyString
+  length: 1.5
+  alturacernelha: 1.5
+  tipopelo: MyString
+  corpelo: MyString
+  weigth: 1.5

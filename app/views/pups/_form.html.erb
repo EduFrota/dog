@@ -1,0 +1,92 @@
+<%= form_with(model: pup, local: true) do |form| %>
+  <% if pup.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pup.errors.count, "error") %> prohibited this pup from being saved:</h2>
+
+      <ul>
+      <% pup.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :pup_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :breed %>
+    <%= form.text_field :breed, id: :pup_breed %>
+  </div>
+
+  <div class="field">
+    <%= form.label :age %>
+    <%= form.number_field :age, id: :pup_age %>
+  </div>
+
+  <div class="field">
+    <%= form.label :genre %>
+    <%= form.text_field :genre, id: :pup_genre %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vaccine %>
+    <%= form.text_field :vaccine, id: :pup_vaccine %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pedigree %>
+    <%= form.text_field :pedigree, id: :pup_pedigree %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mothername %>
+    <%= form.text_field :mothername, id: :pup_mothername %>
+  </div>
+
+  <div class="field">
+    <%= form.label :namefather %>
+    <%= form.text_field :namefather, id: :pup_namefather %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rg %>
+    <%= form.text_field :rg, id: :pup_rg %>
+  </div>
+
+  <div class="field">
+    <%= form.label :temperament %>
+    <%= form.text_field :temperament, id: :pup_temperament %>
+  </div>
+
+  <div class="field">
+    <%= form.label :length %>
+    <%= form.text_field :length, id: :pup_length %>
+  </div>
+
+  <div class="field">
+    <%= form.label :alturacernelha %>
+    <%= form.text_field :alturacernelha, id: :pup_alturacernelha %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tipopelo %>
+    <%= form.text_field :tipopelo, id: :pup_tipopelo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :corpelo %>
+    <%= form.text_field :corpelo, id: :pup_corpelo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weigth %>
+    <%= form.text_field :weigth, id: :pup_weigth %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
