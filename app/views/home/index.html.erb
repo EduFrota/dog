@@ -4,6 +4,10 @@
   <% if current_user.image.present? %>
     <%= image_tag(current_user.image, size: "40") %>
   <% end %>
+  <p><h1>Editar meus Dados</p></br> 
+ <h2><%= link_to "Editar Usuario", edit_user_registration_path, method: :get %></h2>
+
+
 </p>
 <h1>Escolha a Opção</h1>
 <p> 
@@ -12,6 +16,7 @@
 <p> 
 <h2><%=link_to "Adicionar cão  ", new_pup_path %></h2>
 </p>
+
 
 
 </br>
